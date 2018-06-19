@@ -1,0 +1,150 @@
+<script>
+
+				      function initMap() {
+				        var myLatLng = {lat: -7.705250, lng: 110.980918};
+
+				        var map = new google.maps.Map(document.getElementById('map'), {
+				          zoom: 15,
+				          center: myLatLng,
+				          styles: [
+				            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+				            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+				            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+				            {
+				              featureType: 'administrative.locality',
+				              elementType: 'labels.text.fill',
+				              stylers: [{color: '#d59563'}]
+				            },
+				            {
+				              featureType: 'poi',
+				              elementType: 'labels.text.fill',
+				              stylers: [{color: '#d59563'}]
+				            },
+				            {
+				              featureType: 'poi.park',
+				              elementType: 'geometry',
+				              stylers: [{color: '#263c3f'}]
+				            },
+				            {
+				              featureType: 'poi.park',
+				              elementType: 'labels.text.fill',
+				              stylers: [{color: '#6b9a76'}]
+				            },
+				            {
+				              featureType: 'road',
+				              elementType: 'geometry',
+				              stylers: [{color: '#38414e'}]
+				            },
+				            {
+				              featureType: 'road',
+				              elementType: 'geometry.stroke',
+				              stylers: [{color: '#212a37'}]
+				            },
+				            {
+				              featureType: 'road',
+				              elementType: 'labels.text.fill',
+				              stylers: [{color: '#9ca5b3'}]
+				            },
+				            {
+				              featureType: 'road.highway',
+				              elementType: 'geometry',
+				              stylers: [{color: '#746855'}]
+				            },
+				            {
+				              featureType: 'road.highway',
+				              elementType: 'geometry.stroke',
+				              stylers: [{color: '#1f2835'}]
+				            },
+				            {
+				              featureType: 'road.highway',
+				              elementType: 'labels.text.fill',
+				              stylers: [{color: '#f3d19c'}]
+				            },
+				            {
+				              featureType: 'transit',
+				              elementType: 'geometry',
+				              stylers: [{color: '#2f3948'}]
+				            },
+				            {
+				              featureType: 'transit.station',
+				              elementType: 'labels.text.fill',
+				              stylers: [{color: '#d59563'}]
+				            },
+				            {
+				              featureType: 'water',
+				              elementType: 'geometry',
+				              stylers: [{color: '#17263c'}]
+				            },
+				            {
+				              featureType: 'water',
+				              elementType: 'labels.text.fill',
+				              stylers: [{color: '#515c6d'}]
+				            },
+				            {
+				              featureType: 'water',
+				              elementType: 'labels.text.stroke',
+				              stylers: [{color: '#17263c'}]
+				            }
+				          ]
+				        });
+
+
+				        var marker = new google.maps.Marker({
+				          position: myLatLng,
+				          map: map,
+				          title: 'autocarindonesia',
+				          animation: google.maps.Animation.BOUNCE,
+				          icon:'icon/tanda.png',
+				        });
+
+
+				      }
+				    </script>
+				    <script async defer
+				    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCezaJoh5CJBCfO2na0i5P40AEEHURKVVc&callback=initMap">
+				    </script>
+
+				
+
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+				 <div id="map" div ng-app='app' ng-controller='testCtrl' style="width:100%;height:350px;color:#666;text-align:left;font-size:12px; border="0" scrolling="no" marginheight="0" marginwidth="0"></div>
+
+				</div>
+				<div class="col-md-5">
+					<p class="m_8">ONECIVIC INDONESIA merupakan website untuk memberikan informasi semua tentang mobil jenis honda civic. Website ini memberikan informasi berupa galeri foto - foto tentang jenis jenis honda civic, review penjelasannya dan berita atau tips dan trik merawat mobil honda civic. Website ini nantinya juga berguna untuk memberikan wawasan kepada komunitas mobil jenis honda secara umumnya dan secara khusus mobil honda civic itu sendiri.Maka dari itu untuk memberikan saran dan kritik terhadap informasi yang ada di website ini, silahkan menghubungi atau datang langsung ke tempat kami</p>
+					<div class="address">
+				                <p>Jumapolo</p>
+						   		<p>Karanganyar</p>
+						   		<p>Jawa Tengah- Indonesia</p>
+				   		<p>Telp:(+62) 8129 409 3358</p>
+				   		<p>Fax: (128) 888 90 10</p>
+				 	 	<p>Email: <span>ONECIVICINDONESIA@gmail.com</span></p>
+				   		<p>Ikuti di: <span>Facebook</span>, <span>Twitter</span>, <span>Instagram</span></p>
+				   </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 contact">
+				  <form method="post" action="contact-post.html">
+					<div class="to">
+                     	<input type="text" class="text" value="Nama" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nama';}">
+					 	<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+					 
+					</div>
+					<div class="text">
+	                   <textarea value="Pesan:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Pesan';}">Pesan:</textarea>
+	                   <div class="form-submit">
+			           <input name="submit" type="submit" id="submit" value="Submit"><br>
+			           </div>
+	                </div>
+	                <div class="clear"></div>
+                   </form>
+			     </div>
+		    </div>
+	     </div>
+	   </div>
+	  </div>
